@@ -10,11 +10,11 @@ public class Triangle4 {
     	//close the Scanner obj
     	scn.close();
         // number of spaces 
-        int i, j, k=2*n-2; 
+        int i, j, k=n-1; 
   
         // outer loop to handle number of rows 
         //  n in this case 
-        for(i=0; i<n; i++) 
+        for(i=1; i<=n; i++) 
         { 
   
             // inner loop to handle number spaces 
@@ -30,10 +30,10 @@ public class Triangle4 {
               
             //  inner loop to handle number of columns 
             //  values changing acc. to outer loop 
-            for(j=0; j<=i; j++) 
+            for(j=0; j<2*i-1; j++) 
             { 
                 // printing stars 
-                System.out.print("* "); 
+                System.out.print("*"); 
             } 
               
             // ending line after each row 
